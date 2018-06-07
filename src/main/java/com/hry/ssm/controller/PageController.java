@@ -31,21 +31,20 @@ public class PageController {
     }
 
     /**
-     * 跳转到图片上传界面
-     * @return
-     */
-    @RequestMapping("/upload")
-    public String uploadPage() {
-        return "test";
-    }
-
-    /**
      * 跳转到企业版页面
      * @return
      */
     @RequestMapping("/page/enterprise")
     public String enterprisePage() {
         return "enterprise";
+    }
+
+    /**
+     * 跳转到上传图片界面
+     */
+    @RequestMapping("/page/upload")
+    public String uploadPage() {
+        return "upload";
     }
 
 }
