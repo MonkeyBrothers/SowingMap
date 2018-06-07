@@ -182,15 +182,13 @@
                 </div>
                 <div class="lunbo">
                     <a href="#"><img src="http://192.168.52.128/images/2018/06/07/1528339526297450.png"></a>
-                    <!--  <a href="#"><img src="images/2.png"></a>
-                     <a href="#"><img src="images/3.png"></a> -->
+
 
                 </div>
                 <div id="toright">&gt;</div>
                 <ul>
                     <li></li>
-                    <!--  <li></li>
-                     <li></li> -->
+
                 </ul>
                 <span></span>
             </div>

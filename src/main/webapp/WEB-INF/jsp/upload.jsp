@@ -29,7 +29,7 @@
 </head>
 <style type="text/css">
     .upload_div {
-        margin: 0 auto;
+        margin: 50px auto;
         background-color: pink;
         width: 50%;
         height: 500px;
@@ -39,18 +39,18 @@
 
 <div class="upload_div">
 
-    <form>
+    <form action="/image/upload" enctype="multipart/form-data" method="post">
         <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            <label>图片链接地址</label>
+            <input type="text" class="form-control" name="uniform" placeholder="">
         </div>
         <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <label>备注信息</label>
+            <input type="text" class="form-control" name="imagename" placeholder="">
         </div>
         <div class="form-group">
-            <label for="exampleInputFile">File input</label>
-            <input type="file" id="exampleInputFile">
+            <label>上传照片</label>
+            <input type="file" name="imageFile">
 
         </div>
 
