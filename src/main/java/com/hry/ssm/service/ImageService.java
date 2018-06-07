@@ -1,5 +1,6 @@
 package com.hry.ssm.service;
 
+import com.hry.ssm.pojo.Sowing;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.Map;
@@ -10,4 +11,6 @@ import java.util.Map;
 public interface ImageService {
     // 图片上传方法
     Map uploadImage(MultipartFile uploadImage);
+
+    void uploadImageToMySql(Sowing sowing);
 }

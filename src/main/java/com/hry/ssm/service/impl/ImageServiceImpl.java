@@ -1,9 +1,12 @@
 package com.hry.ssm.service.impl;
 
+import com.hry.ssm.mapper.SowingMapper;
+import com.hry.ssm.pojo.Sowing;
 import com.hry.ssm.service.ImageService;
 import com.hry.ssm.utils.FTPClientUtil;
 import com.hry.ssm.utils.IdUtil;
 import org.joda.time.DateTime;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -13,6 +16,11 @@ import java.util.Map;
 
 @Service
 public class ImageServiceImpl implements ImageService {
+    @Autowired
+    private SowingMapper sowingMapper;
+
+    String imagePath = "";
+    String newName = "";
 
     @Value("${FTP_ADDRESS}")
     private String FTP_ADDRESS;
@@ -40,11 +48,11 @@ public class ImageServiceImpl implements ImageService {
             // 先取出旧的文件名 之后再生成一个新的文件名
             String oldName = uploadImage.getOriginalFilename();
             // 生成新的文件名
-            String newName = IdUtil.genImageName();
+            newName = IdUtil.genImageName();
             // 生成新的文件名
             newName = newName + oldName.substring(oldName.lastIndexOf("."));
             // 设置图片
-            String imagePath = new DateTime().toString("/yyyy/MM/dd");
+            imagePath = new DateTime().toString("/yyyy/MM/dd");
             // 调用FTPClientUtil上传图片
             boolean result = FTPClientUtil.uploadFile(FTP_ADDRESS, FTP_PORT, FTP_USERNAME, FTP_PASSWORD,
                     FTP_BASE_URL, imagePath, newName, uploadImage.getInputStream());
@@ -60,6 +68,7 @@ public class ImageServiceImpl implements ImageService {
             resultMap.put("success", 0);
             // 设置图片全路径
             resultMap.put("url", IMAGE_BASE_URL + imagePath + "/" + newName);
+
             return resultMap;
         } catch (Exception e) {
             // 输出异常信息
@@ -68,5 +77,16 @@ public class ImageServiceImpl implements ImageService {
             resultMap.put("message", "上传发生异常！");
             return resultMap;
         }
+    }
+
+    /**
+     * 上传图片信息到MySQL
+     *
+     * @param sowing
+     */
+    @Override
+    public void uploadImageToMySql(Sowing sowing) {
+        sowing.setImageurl(IMAGE_BASE_URL + imagePath + "/" + newName);
+        sowingMapper.insert(sowing);
     }
 }

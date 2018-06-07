@@ -1,5 +1,6 @@
 package com.hry.ssm.controller;
 
+import com.hry.ssm.pojo.Sowing;
 import com.hry.ssm.service.ImageService;
 import com.hry.ssm.utils.JsonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,9 +29,12 @@ public class ImageController {
      */
     @RequestMapping(value = "/image/upload", method = RequestMethod.POST)
     @ResponseBody
-    public String imageUpload(@RequestParam(value = "imageFile") MultipartFile uploadImage) {
+    public String imageUpload(Sowing sowing, @RequestParam(value = "imageFile") MultipartFile uploadImage) {
             Map result = imageService.uploadImage(uploadImage);
+
             String json = JsonUtils.objectToJson(result);
+
+            imageService.uploadImageToMySql(sowing);
             return json;
 
     }
