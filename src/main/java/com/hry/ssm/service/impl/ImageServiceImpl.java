@@ -47,7 +47,7 @@ public class ImageServiceImpl implements ImageService {
             String imagePath = new DateTime().toString("/yyyy/MM/dd");
             // 调用FTPClientUtil上传图片
             boolean result = FTPClientUtil.uploadFile(FTP_ADDRESS, FTP_PORT, FTP_USERNAME, FTP_PASSWORD,
-                    FTP_PASSWORD, imagePath, newName, uploadImage.getInputStream());
+                    FTP_BASE_URL, imagePath, newName, uploadImage.getInputStream());
             // 上传失败判断
             if (!result) {
                 // 设置json返回status
@@ -57,7 +57,7 @@ public class ImageServiceImpl implements ImageService {
                 return resultMap;
             }
             // 上传成功
-            resultMap.put("error", 0);
+            resultMap.put("success", 0);
             // 设置图片全路径
             resultMap.put("url", IMAGE_BASE_URL + imagePath + "/" + newName);
             return resultMap;
