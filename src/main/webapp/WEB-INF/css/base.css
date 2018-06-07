@@ -1,0 +1,1041 @@
+﻿input[type=text], input[type=password], textarea {
+    font-family: "Microsoft Yahei", SimSun, Arial, "Helvetica Neue", Helvetica;
+}
+
+/*==========================================首页面布局==============================================*/
+/*导航栏头部红色导航*/
+.tbar {
+    height: 30px;
+    background-color: skyblue;
+}
+
+/*进入企业版*/
+.tbar a {
+    color: #f8f8f8;
+    line-height: 30px;
+    float: right;
+    margin-right: 100px;
+}
+
+/*导航栏头部白色导航*/
+.mr_nva {
+    display: block;
+    height: 54px;
+    background-color: #fff;
+}
+
+/*定义网站logo*/
+.mr_logo img {
+    float: left;
+    height: 54px;
+    line-height: 60px;
+    margin-left: 170px;
+}
+
+/*城市选择样式*/
+.mr_nva_city ul li {
+    float: left;
+    height: 60px;
+    margin-left: 10px;
+}
+
+.mr_nva_city ul li:nth-child(1) {
+    margin-right: 8px 0;
+    color: #333;
+    font-size: 19px;
+    font-weight: 400px;
+    padding-top: 20px;
+}
+
+.mr_nva_city ul li:nth-child(2) {
+    color: #999;
+    padding-top: 36px;
+    font-size: 12px;
+}
+
+/*导航栏部分*/
+.mr_nva_wrap ul li a {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+    font-size: 18px;
+    margin-left: 80px;
+    color: red;
+}
+
+.mr_nva_wrap ul li a:hover {
+    border-bottom: 2px solid #00a57f;
+}
+
+/*搜索框样式部分*/
+.mr_search {
+    padding-top: 8px;
+    background-color: #F2F5F4;
+    height: 138px;
+    border: 1px solid #F2F5F4;
+}
+
+.searchBox {
+    height: 50px;
+    width: 960px;
+    background-color: white;
+    float: left;
+    margin: 0px 0 0 296px;
+}
+
+.searchBox input[type=text] {
+    float: left;
+    height: 50px;
+    width: 800px;
+    line-height: 50px;
+    border: 0 solid #F2F5F4;
+    padding-left: 20px;
+}
+
+.searchBox input[type=button] {
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    background-color: #00b38a;
+    font-size: 18px;
+    color: #FFF;
+    float: left;
+}
+
+/*热门搜索总样式*/
+.hotSearch {
+    height: 50px;
+    width: 960px;
+    float: left;
+    margin: 5px 0 0 296px;
+    font-family: "Hiragino Sans GB", "Microsoft Yahei", SimSun, Arial, "Helvetica Neue", Helvetica;
+}
+
+/*热门搜索四个字*/
+.hotSearch dl dt {
+    margin: 4px 0 0 8px;
+    font-size: 16px;
+    color: #777;
+    float: left;
+}
+
+/*热门内容字体样式*/
+.hotSearch dl dd a {
+    display: block;
+    height: 50px;
+    line-height: 33px;
+    float: left;
+    font-size: 14px;
+    margin: 0 20px;
+    color: #00b38a;
+}
+
+.hotSearch dl dd a:hover {
+    text-decoration: underline
+}
+
+.mr_slider {
+    display: block;
+
+    height: 440px;
+    position: relative;
+
+}
+
+/*左侧导航栏部分*/
+.slider_l {
+    margin: 36px 0 0 157px;
+    height: 368px;
+    width: 260px;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    float: left;
+}
+
+.slider_l li a {
+    font-family: "Hiragino Sans GB", "Microsoft Yahei", SimSun, Arial, "Helvetica Neue", Helvetica;
+    font-size: 16px;
+    color: #333;
+    display: block;
+    padding: 2px 42px;
+    line-height: 45px;
+}
+
+.slider_l li span {
+    float: right;
+
+}
+
+/*主心块*/
+.mr_container {
+    width: 1260px;
+    margin-left: 156px;
+}
+
+/*主页面上面的滚动图片*/
+.slider_searchImg {
+    height: 368px;
+    width: 895px;
+    float: left;
+    position: relative;
+    margin: 36px 0 0 50px;
+    background-color: pink;
+    overflow: hidden; /*图片溢出部分隐藏*/
+}
+
+.slider_searchImg ul li {
+    display: block;
+    height: 368px;
+    width: 895px;
+    background-color: red;
+}
+
+/*大图片样式控制*/
+.slider-main {
+    position: absolute;
+    display: block;
+    width: 895px;
+    height: 368px;
+    overflow: hidden;
+}
+
+.slider-extra {
+    position: relative;
+}
+
+.slider-page {
+    position: absolute;
+}
+
+.slider-page-left {
+
+    margin-top: 200px;
+    margin-left: 490px;
+}
+
+.slider-page-right {
+    position: absolute;
+    margin-top: -38px;
+    margin-left: 1320px;
+
+}
+
+/*互动箭头*/
+
+.circle {
+    position: absolute;
+    margin-top: 333px;
+    width: 160px;
+    height: 36px;
+
+    margin-left: 850px;
+}
+
+.circle ul li {
+    height: 20px;
+    width: 20px;
+    display: block;
+    background-color: black;
+    float: left;
+    margin: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.circle .current {
+    background-color: white;
+}
+
+.index_banner {
+    width: 1206px;
+    height: 50px;
+    border-bottom: 1px solid red;
+}
+
+.index_banner ul li {
+    display: block;
+    float: left;
+    margin-right: 36px;
+    margin-left: 28px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-family: "Hiragino Sans GB", "Microsoft Yahei", SimSun, Arial, "Helvetica Neue", Helvetica;
+    color: #999;
+
+}
+
+.index_banner .current {
+    background-color: purple;
+}
+
+/*鼠标经过  热门职位导航栏*/
+.index_banner ul li:hover {
+    border-bottom: 2px solid black;
+}
+
+/*卡片样式*/
+.con_job_hot {
+    width: 1240px;
+    height: 1000px;
+    /*		background-color: black;*/
+    position: relative;
+    margin-top: 10px;
+
+}
+
+.con_job_hot ul li {
+    float: left;
+    width: 345px;
+    height: 200px;
+    margin: 16px 30px 0 0px;
+    padding: 20px 18px 0;
+    border: 1px solid #EAEEED;
+    transition: all 0.5s;
+
+}
+
+/*鼠标经过卡片*/
+.con_job_hot ul li:hover {
+
+    box-shadow: 0px 2px 40px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+/*工作名称加标题*/
+.job_title {
+    line-height: 20px;
+    height: 24px;
+
+}
+
+.job_title h5 {
+    font-weight: normal;
+    font-size: 12px
+}
+
+/*工作连接*/
+.job_title a {
+    font-size: 16px;
+
+    display: block;
+    float: left;
+}
+
+/*发布时间样式*/
+.j_time {
+    color: #999;
+    font-size: 14px;
+
+    margin-left: 20px;
+    display: block;
+    float: left;
+}
+
+/*工资金钱 样式*/
+.j_salary {
+    font-size: 16px;
+    color: #fa6041;
+    float: right;
+}
+
+/*像微信一样的小图标*/
+.j_t_img {
+    width: 16px;
+    height: 16px;
+
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+/*公司招聘要求*/
+.yaoqiu {
+    height: 30px;
+    line-height: 30px;
+    color: #777;
+
+}
+
+/*公司标签*/
+.biaoqian {
+    font-size: 12px;
+    color: #999;
+    height: 60px;
+
+}
+
+.biaoqian span {
+    padding: 0 10px;
+    margin-right: 20px;
+    margin-top: 16px;
+    display: block;
+    float: left;
+    border: 1px solid #F0F0F0;
+    height: 26px;
+    line-height: 26px;
+
+}
+
+/*公司简介*/
+.j_jianjie {
+
+    height: 70px;
+    font-size: 14px;
+    font-family: "Hiragino Sans GB", "Microsoft Yahei", SimSun, Arial, "Helvetica Neue", Helvetica;
+    color: #333;
+    border-top: 1px dashed red;
+
+}
+
+.j_jianjie div {
+    float: left;
+}
+
+/*公司图标*/
+.jianjie_img {
+    margin-top: 8px;
+    height: 60px;
+    width: 60px;
+    background-color: pink;
+    overflow: hidden;
+}
+
+.j_name,
+.j_xinxi {
+    margin-left: 10px;
+    font-family: "Hiragino Sans GB", "Microsoft Yahei", SimSun, Arial, "Helvetica Neue", Helvetica;
+    font-size: 14px;
+
+}
+
+.j_name {
+    margin-top: 14px;
+}
+
+.j_xinxi {
+    margin-top: 8px;
+    color: #999;
+}
+
+/*========================================登录页面和注册页面布局=======================================*/
+/*登陆页面*/
+.login-page {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: #5dd5c8 url(../images/newbg.png) center bottom no-repeat;
+}
+
+.tip-message {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 324px;
+    height: 40px;
+    color: red;
+
+}
+
+/*登录框样式*/
+.sign-wrap {
+    height: 500px;
+    width: 410px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    margin: -268px 0 0 -205px;
+    border-radius: 10px;
+}
+
+/*登录样式*/
+.sign-wrap-title {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    color: #5dd5c8;
+    position: relative;
+    text-align: center;
+}
+
+/*登录字体样式*/
+.sign-wrap-btn {
+    width: 324px;
+    font-size: 16px;
+    color: #fff;
+    height: 42px;
+    line-height: 42px;
+    border: none;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 40px;
+    background-color: #5dd5c8;
+}
+
+/*请输入账号样式*/
+.sign-wrap-txt {
+    margin-top: 40px;
+    margin-left: 40px;
+    height: 42px;
+    width: 324px;
+    background-color: white;
+}
+
+/*没有账号字体样式*/
+.sign-wrap-tip {
+    color: #9fa3b0;
+    text-align: center;
+    padding: 28px 0 36px
+}
+
+/*立刻注册字体样式*/
+.sign-wrap-tip a {
+    color: #5dd5c8;
+}
+
+/*请输入账号样式*/
+.regist-wrap-txt {
+    margin-top: 20px;
+    margin-left: 40px;
+    height: 42px;
+    width: 324px;
+    background-color: white;
+}
+
+/*========================================查询招聘列表页面布局=======================================*/
+
+/*招聘列表页面*/
+.j-searchBox {
+    height: 50px;
+    width: 1000px;
+    background-color: white;
+    float: left;
+    margin: 40px 0 0 -130px;
+}
+
+.j-searchBox input[type=text] {
+    float: left;
+    height: 50px;
+    width: 830px;
+    line-height: 50px;
+    border: 0 solid #F2F5F4;
+    padding-left: 20px;
+}
+
+.j-searchBox input[type=button] {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    background-color: #00b38a;
+    font-size: 18px;
+    color: #FFF;
+    float: right;
+}
+
+/*热门搜索总样式*/
+.j-hotSearch {
+    height: 50px;
+    width: 960px;
+    float: left;
+    margin: 5px 0 0 162px;
+    font-family: "Hiragino Sans GB", "Microsoft Yahei", SimSun, Arial, "Helvetica Neue", Helvetica;
+}
+
+/*热门搜索四个字*/
+.j-hotSearch dl dt {
+    margin: 4px 0 0 8px;
+    font-size: 16px;
+    color: #777;
+    float: left;
+}
+
+/*热门内容字体样式*/
+.j-hotSearch dl dd a {
+    display: block;
+    height: 50px;
+    line-height: 33px;
+    float: left;
+    font-size: 14px;
+    margin: 0 20px;
+    color: #00b38a;
+}
+
+.j-hotSearch dl dd a:hover {
+    text-decoration: underline
+}
+
+.j-searchBoxList {
+    margin-left: 170px;
+
+    width: 1000px;
+
+}
+
+.j-searchBoxTiaoJian {
+    margin-top: 40px;
+    height: 300px;
+    width: 1000px;
+    background-color: pink;
+}
+
+.j-searchBoxPaiXu {
+    margin: 20px 0 20px 0;
+    width: 1000px;
+    height: 40px;
+    background-color: red;
+}
+
+.j-searchBoxNews {
+
+    height: 1200px;
+    width: 1000px;
+    background-color: pink;
+}
+
+.j-searchBoxNews-messages {
+    float: left;
+    height: 60px;
+    width: 550px;
+    background-color: red;
+
+}
+
+.j-searchBoxNews-messages2 {
+    margin-left: 20px;
+    float: left;
+    height: 60px;
+    width: 420px;
+    background-color: red;
+
+}
+
+.j-searchBoxNews-messages-title {
+
+    font-size: 16px;
+    color: #00b38a;
+}
+
+.j-searchBoxNews-messages-title span {
+    color: #999
+}
+
+.j-searchBoxNews-messages-title-yaoqiu {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fd5f39
+}
+
+.j-searchBoxNews-messages-title-yaoqiu span {
+    font-size: 14px;
+    color: #555
+}
+
+.j-searchBoxTiaoJian-address {
+    font-family: "Hiragino Sans GB", "Microsoft Yahei", SimSun, Arial, "Helvetica Neue", Helvetica;
+    height: 40px;
+    background-color: #f2f5f4;
+}
+
+.j-searchBoxTiaoJian ul li span {
+    line-height: 40px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.j-searchBoxTiaoJian-a {
+    color: #555;
+    background-color: #fff;
+    margin-right: 5px;
+    padding: 5px 8px;
+}
+
+.j-searchBoxTiaoJian-gengduo {
+    color: #555;
+    margin-left: 15px;
+}
+
+/*=============================================job.html==================================*/
+.position-head {
+    background-color: #f2f5f4;
+    padding: 30px 0 11px;
+    width: 100%;
+    height: 170px;
+    min-width: 1024px;
+
+}
+
+.position-content {
+    position: relative;
+    width: 1024px;
+    height: 174px;
+    margin: 0 auto;
+
+}
+
+.position-content1 {
+    height: 180px;
+    width: 396px;
+
+}
+
+.position-content2 {
+    margin-top: 10px;
+    height: 84px;
+    width: 396px;
+
+}
+
+.position-content1-job-name {
+    height: 36px;
+    font-size: 36px;
+    color: #333;
+    line-height: 36px;
+}
+
+.position-content2 p span {
+    font-size: 18px;
+    color: #555;
+}
+
+.position-content-r {
+    width: 258px;
+    height: 122px;
+    position: absolute;
+    right: 0;
+    top: 12px;
+    max-width: 328px
+}
+
+.container-job-message {
+    margin: 0 auto;
+    width: 1024px;
+    height: 925px;
+    background-color: rgba(242, 245, 244, .9);
+}
+
+.container-job-message-left {
+    float: left;
+    width: 768px;
+
+    background-color: #fff;
+}
+
+.container-job-message-right {
+    float: right;
+
+    width: 250px;
+
+    background-color: #fff;
+}
+
+.position-content1-p-span1 {
+    margin-left: -166px;
+    font-size: 14px;
+    color: #555;
+    position: relative;
+    left: 2px;
+}
+
+.position-content2-p1 {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.position-content2 ul li {
+    float: left;
+    height: 22px;
+    margin-right: 8px;
+    padding: 0 10px;
+    line-height: 22px;
+    background-color: #fff;
+    color: #70797b;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+.position-content2-p2 {
+    padding-top: 10px;
+    font-size: 14px;
+    color: #999;
+}
+
+.position-content2 .position-content2-span1 {
+    color: #fd5f39;
+}
+
+.position-content-r-button-a a {
+    float: left;
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    border: 1px solid #00b38a;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+
+}
+
+.position-content-r-a1 {
+    width: 104px;
+    background-color: #ebf0ef;
+    color: #00a57f;
+}
+
+.position-content-r-a2 {
+    margin-left: 17px;
+    background-color: #00b38a;
+    color: #fff;
+    width: 120px;
+}
+
+.position-content-r-button-jianli a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #555;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.position-content-r-a4 {
+    margin-left: 50px;
+}
+
+.container-job-message-left div {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    width: 696px;
+
+}
+
+.container-job-message-left span {
+    font-size: 16px;
+    color: #333;
+    font-weight: 700
+
+}
+
+.container-job-message-left p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 22px;
+
+}
+
+.container-job-message-left-div2 p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.container-job-message-left-div2 .container-job-message-left-div2-miaoshu {
+    padding-top: 20px;
+
+    font-size: 15px;
+    color: #00b38a;
+}
+
+.container-job-message-left-div3 .container-job-message-left-div2-address {
+    color: #00b38a;
+}
+
+.container-job-message-right-gongsiImage {
+    margin: 50px 0 30px 10px;
+    width: 120px;
+    height: 120px;
+    border: 2px solid black;
+
+}
+
+.container-job-message-right-gongsiImage img {
+    width: 120px;
+    height: 120px;
+
+}
+
+.container-job-message-right-gongsiMessages {
+    height: 722px;
+}
+
+.container-job-message-right-gongsiMessages span {
+    font-size: 16px;
+    color: #333;
+    font-weight: 700
+}
+
+.container-job-message-right-gongsiMessages p {
+
+    margin: 0 0 16px;
+    color: #737373;
+    line-height: 25px;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.container-job-message-right-gongsiMessages a {
+    color: #555;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/*页面底部样式*/
+.footer {
+
+    background-color: #fafafa;
+}
+
+.footer-container {
+    margin-top: 50px;
+    height: 70px;
+
+}
+
+.footer-container-fuwu {
+    line-height: 70px;
+    margin: 0 auto;
+    width: 450px;
+
+}
+
+.footer-container-fuwu a {
+    margin-right: 5px;
+    color: #333;
+}
+
+.footer-container-footer {
+    position: relative;
+
+    height: 140px;
+    width: 520px;
+    margin: 0 auto;
+
+}
+
+.footer-container-footer p {
+    padding-top: 5px;
+    color: #999;
+    text-align: center;
+    line-height: 18px;
+    font-size: 12px;
+}
+
+/*=====================================jianli.html====================================*/
+
+.jianli {
+
+    margin: 50px auto;
+    height: 1024px;
+    width: 1024px;
+    background-color: hotpink;
+}
+
+.jianli-container {
+    height: 190px;
+    width: 702px;
+    background-color: pink;
+    position: relative;
+}
+
+.jianli-container img {
+    position: absolute;
+}
+
+.jianli-container .jianli-container-touxiang {
+    margin: 45px 0 0 290px;
+    position: absolute;
+}
+
+.jianli-container-name {
+    height: 160px;
+    width: 702px;
+    background-color: pink;
+}
+
+.jianli-container-name span {
+    display: block;
+    height: 40px;
+    width: 468px;
+    margin: 0 auto;
+    line-height: 40px;
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+}
+
+.jianli-container-name-message {
+    margin: 10px auto;
+    height: 66px;
+    width: 320px;
+    background-color: skyblue;
+
+}
+
+.jianli-container-name div span {
+
+    display: block;
+    width: 100px;
+    float: left;
+    line-height: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.jianli-container-name-wanshanjianli {
+
+    margin-top: 40px;
+    height: 90px;
+    width: 702px;
+    background-color: skyblue;
+}
+
+.jianli-container-name-wanshanjianli-tishi {
+    float: left;
+    margin-left: 30px;
+    padding-top: 15px;
+    width: 400px;
+    background-color: pink;
+}
+
+.jianli-container-name-wanshanjianli-tishi span {
+    font-family: "Hiragino Sans GB", "Microsoft Yahei", SimSun, Arial, "Helvetica Neue", Helvetica;
+    font-size: 28px;
+    line-height: 30px;
+}
+
+.jianli-container-name-wanshanjianli-tishi p {
+    margin-top: 10px;
+    color: #999;
+    font-size: 14px;
+    font-family: "Hiragino Sans GB", "Microsoft Yahei", SimSun, Arial, "Helvetica Neue", Helvetica;
+}
+
+.jianli-container-name-wanshanjianli-a {
+    margin-left: 60px;
+    margin-top: 15px;
+    float: left;
+    height: 30px;
+    width: 130px;
+    border: 1px solid #00b88d;
+    border-radius: 6px;
+    padding: 11px 18px;
+    background-color: #fff;
+}
+
+.jianli-container-name-wanshanjianli-a a span {
+    line-height: 30px;
+    font-size: 16px;
+    color: #00b88d;
+}
